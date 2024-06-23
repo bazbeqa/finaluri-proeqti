@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>ანგარიშის წაშლა</h2>
+    <p>დარწმუნებული ხართ, რომ გსურთ თქვენი ანგარიშის წაშლა? ეს მოქმედება შეუქცევადია.</p>
+    <form method="POST">
+        <input type="submit" value="დიახ, წაშალე ჩემი ანგარიში">
+    </form>
+    <a href="{{ url_for('home') }}">არა, დაბრუნება მთავარ გვერდზე</a>
+{% endblock %}

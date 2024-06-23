@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>რეგისტრაცია</h2>
+    <form method="POST">
+        <label for="username">მომხმარებლის სახელი:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="რეგისტრაცია">
+    </form>
+    <p>უკვე გაქვთ ანგარიში? <a href="{{ url_for('login') }}">შედით</a></p>
+{% endblock %}
